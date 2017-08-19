@@ -1,0 +1,23 @@
+{
+  "name": "reactivejavaScript",
+  "version": "1.0.0",
+  "description": "Reactive programming in JavaScript using TypeScript",
+  "main": "index.js",
+  "repository": "github.com/mrmodise/rxjs-with-typescript",
+  "author": "M.R. Modise",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --watch --inline",
+    "postinstall": "typings install"
+  },
+  "dependencies": {
+    "rxjs": "^5.4.3"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.3.3",
+    "typescript": "^2.4.2",
+    "typings": "^2.1.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
