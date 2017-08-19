@@ -16,8 +16,7 @@ let source = Observable.create(observer => {
     };
 
     produceValue();
-}).map(n => n * 2)
-    .filter(n => n > 4);
+}).map(n => n * 2).filter(n => n > 4); // operators
 
 source.subscribe(
     value => console.log(`Value ${value}`),
