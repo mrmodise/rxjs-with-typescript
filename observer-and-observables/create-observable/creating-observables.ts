@@ -36,9 +36,11 @@ let observer = Observable.create(observer => {
     observer.complete();
 });
 
-observer.subscribe(value => console.log(`Value ${value}: verbose`),
+observer.subscribe(
+    value => console.log(`Value ${value}: verbose`),
     error => console.log(`On error ${error}: verbose`),
-    () => console.log('Completed: verbose'));
+    () => console.log('Completed: verbose')
+);
 
 // an easier implementation
 source.subscribe(
@@ -47,5 +49,5 @@ source.subscribe(
     () => console.log('Completed: easier implementation')
 );
 
-// subscript to the observable
+// subscribe to the observable
 source.subscribe(new MyObserver());
